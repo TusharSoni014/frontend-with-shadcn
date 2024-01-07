@@ -1,6 +1,15 @@
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import History from "./components/History";
+
 function App() {
-  return <>
-  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id iure optio laudantium culpa? Aperiam veritatis, vel voluptate nostrum hic iste animi corrupti adipisci modi odio, sed excepturi accusamus, culpa quisquam.</>;
+  return (
+    <div className="relative">
+      <Header />
+      <Hero />
+      <History/>
+    </div>
+  );
 }
 
 export default App;
