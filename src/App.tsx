@@ -1,6 +1,6 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import History from "./components/History";
+import History from "./components/History/History";
 
 function App() {
   return (
