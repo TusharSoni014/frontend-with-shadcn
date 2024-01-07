@@ -10,7 +10,7 @@ export default function Footer() {
           <img className="w-10 h-10" src={logo} alt="" />
           <img className="h-9" src={textLogo} alt="text-logo" />
         </div>
-        <p className="font-bold text-slate-500">COPYRIGHT 2016 ALL RIGHTS RESERVED</p>
+        <p className="font-bold text-xs lg:text-base text-slate-500">COPYRIGHT 2016 ALL RIGHTS RESERVED</p>
       </div>
     </footer>
   );

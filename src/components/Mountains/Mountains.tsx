@@ -7,8 +7,8 @@ export default function Mountains() {
       className="__mountains_section flex items-center flex-col w-full"
     >
       <div className="__mountains_container lg:max-w-[60%] w-full">
-        <div className="__information px-4 py-2 flex gap-6 justify-center items-center">
-          <div className="__title flex w-full">
+        <div className="__information px-4 py-2 flex flex-col lg:flex-row gap-6 justify-center items-center">
+          <div className="__title flex w-full justify-center">
             <h1 className="text-9xl uppercase text-[#6c7b978c] font-bold w-fit ">
               02.
             </h1>
@@ -24,7 +24,7 @@ export default function Mountains() {
         </div>
       </div>
       <div className="__mountain_menu bg-[#414f6bdd] w-full h-8 flex justify-center items-center">
-        <div className="__links_container flex max-w-[60%] w-full h-full">
+        <div className="__links_container flex max-w-full justify-center lg:justify-start lg:max-w-[60%] w-full h-full">
           <a
             className=" text-gray-500 underline w-fit bg-gray-300 h-full font-bold px-3 flex justify-center items-center"
             href="#"
