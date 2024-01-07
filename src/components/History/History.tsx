@@ -1,4 +1,3 @@
-import StickyNav from "../StickyNav";
 import history from "../../assets/history.jpg";
 import Carousel from "./Carousel";
 import { useEffect, useState } from "react";
@@ -33,8 +32,7 @@ export default function History() {
         src={history}
         alt=""
       />
-      <StickyNav />
-      <div className="__details relative z-10 pt-10 flex flex-col items-center justify-between h-[calc(100vh-40px)]">
+      <div className="__details relative z-10 pt-10 flex flex-col items-center justify-between h-screen">
         <div className="__details_container w-full lg:max-w-[60%] flex flex-col justify-center">
           <div className="__upper p-3">
             <div className="__title flex">
