@@ -1,8 +1,28 @@
 import StickyNav from "../StickyNav";
 import history from "../../assets/history.jpg";
 import Carousel from "./Carousel";
+import { useEffect, useState } from "react";
+import Accordion from "./Accordion";
 
 export default function History() {
+  const [isMobile, setIsMobile] = useState<boolean>(false);
+
+  useEffect(() => {
+    const checkIsMobile = () => {
+      setIsMobile(window.innerWidth <= 640);
+    };
+
+    // Initial check
+    checkIsMobile();
+
+    // Add event listener for window resize
+    window.addEventListener("resize", checkIsMobile);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", checkIsMobile);
+    };
+  }, []);
   return (
     <div
       id="history"
@@ -34,8 +54,8 @@ export default function History() {
           </div>
         </div>
         <div className="__lower w-full flex justify-center items-center py-10 bg-[#414f6bb4]">
-          <div className="__carousel_container max-w-[60%]">
-          <Carousel />
+          <div className="__carousel_container max-w-[60%] w-full">
+            {isMobile ? <Accordion /> : <Carousel />}
           </div>
         </div>
       </div>
